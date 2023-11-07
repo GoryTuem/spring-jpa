@@ -22,7 +22,7 @@ public class MemberService {
          return member.getId();
     }
 
-    /*중복회원 검증*/
+    /*중복 회원 검증*/
     private void validateDuplicateMember(Member member){
 
         List<Member> findMembers = memberRepository.findByName(member.getName());
